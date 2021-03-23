@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char name;
+    int age;
+
+    printf("Whats your name?\n");
+    scanf("%c",&name);
+    fflush(stdin);
+    printf("How old are you?\n");
+    scanf("%d",&age);
+
+    printf("\n Age: %d\n",age);
+    printf("\n Name: %c\n",name);
+
+    if (age>=18){
+        printf("\nYou Are Eligible To Vote\n");
+    }
+    else if (age<=17){
+        printf("\nYou Are Not Eligible To Vote\n");
+
+    }
+    else {
+        printf("Invalid age, Please Try Again\n");
+    }
+
+
+
+    return 0;
+}
